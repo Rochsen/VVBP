@@ -1,6 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export default sidebar({
+export const sideBarConfig = sidebar({
   "/notes/": "structure",
   "/about/": "structure",
   "/strategy/": [
@@ -15,7 +15,7 @@ export default sidebar({
       // icon: "book-atlas",
       prefix: "games/backpackBattle/",
       children: "structure",
-    }
+    },
   ],
   "/": [
     // "",

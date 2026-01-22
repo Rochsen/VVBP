@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import { sideBarConfig } from "./sidebar/index.js";
 
 export default hopeTheme(
   // 主题选项
@@ -23,7 +23,7 @@ export default hopeTheme(
     navbar,
 
     // 侧边栏
-    sidebar,
+    sidebar: sideBarConfig,
 
     // 页脚
     footer: "默认页脚",
