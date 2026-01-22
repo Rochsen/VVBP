@@ -1,7 +1,7 @@
 ---
 home: true
 layout: Blog
-icon: house
+# icon: house
 title: 主页
 bgImage: /20250527-2.jpg
 # heroImage: /avatar.png

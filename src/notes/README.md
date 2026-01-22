@@ -1,7 +1,7 @@
 ---
 title: 笔记
 index: false
-icon: pen
+# icon: pen
 category:
   - 使用指南
 pageInfo: false

@@ -12,33 +12,23 @@ export default navbar([
   // 攻略
   {
     text: "攻略",
-    icon: "pen-to-square",
+    // icon: "pen-to-square",
     prefix: "/strategy/",
     children: [
       {
-        text: "艾尔登法环 黑夜君临",
-        icon: "person-running",
-        prefix: "nightReign/",
+        text: "游戏",
+        // icon: "person-running",
+        prefix: "games/",
         children: [
           {
-            text: "Boss弱点",
-            icon: "person-running",
-            link: "bossAnti",
+            text: "艾尔登法环 黑夜君临",
+            // icon: "person-running",
+            link: "nightReign/bossAnti",
           },
           {
-            text: "第三晚Boss推断",
-            icon: "person-running",
-            link: "thirdNightBossInfer",
-          },
-          {
-            text: "大空洞水晶位置",
-            icon: "person-running",
-            link: "bigHoleCrystal",
-          },
-          {
-            text: "流派整理",
-            icon: "person-running",
-            link: "genre",
+            text: "背包乱斗：福西法的宝藏",
+            // icon: "person-running",
+            link: "backpackBattle/itemsFunc",
           },
         ],
       },

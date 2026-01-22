@@ -6,9 +6,15 @@ export default sidebar({
   "/strategy/": [
     {
       text: "艾尔登法环 黑夜君临",
-      icon: "book",
-      prefix: "nightReign/",
-      children: "structure"
+      // icon: "person-running",
+      prefix: "games/nightReign/",
+      children: "structure",
+    },
+    {
+      text: "背包乱斗：福西法的宝藏",
+      // icon: "book-atlas",
+      prefix: "games/backpackBattle/",
+      children: "structure",
     }
   ],
   "/": [

@@ -10,7 +10,7 @@ export default hopeTheme(
 
     author: {
       name: "罗浩森",
-      url: "https://mister-hope.com",
+      url: "https://rochsen.github.io/VVBP/",
     },
 
     logo: "/wechat-avatar.png",
@@ -32,7 +32,7 @@ export default hopeTheme(
     // 博客相关
     blog: {
       description: "生物信息分析工程师、前后端开发初学者",
-      intro: "/intro.html",
+      intro: "/about/",
       medias: {
         BiliBili: "https://space.bilibili.com/361524948",
         GitHub: "https://github.com/Rochsen",
@@ -209,5 +209,5 @@ export default hopeTheme(
     },
   },
   // 主题行为选项（可选）
-  { custom: true }
+  { custom: true },
 );

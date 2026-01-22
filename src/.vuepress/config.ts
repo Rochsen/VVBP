@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/VVBP/",
 
   lang: "zh-CN",
-  title: "博客演示",
+  title: "Rochsen's Blog",
   description: "vuepress-theme-hope 的博客演示",
 
   theme,
