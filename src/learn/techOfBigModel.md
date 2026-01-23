@@ -1,5 +1,5 @@
 ---
-title: 大模型应用开发试学课-1
+title: 公开课-day1
 date: 2026-01-22
 category:
   - 教程
@@ -7,7 +7,9 @@ tag:
   - AI
 ---
 
-# 产品举例
+<!-- more -->
+
+## 产品举例
 
 - 支小助
 - AiPPT
@@ -16,7 +18,7 @@ tag:
 - 星野-AI陪聊智能体
 - meitu
 
-# 入行需要的步骤
+## 入行需要的步骤
 
 1. 首先要了解AI的模型和技术应用知识（作用：从基座模型二开）
 2. 熟练使用AI开发工具
@@ -24,13 +26,13 @@ tag:
 4. 保持AI最新技能同步
 5. 不断学习和做项目实战
 
-# 需要掌握什么技术？
+## 需要掌握什么技术？
 
 ![image-20260122194737422](techOfBigModel.assets/image-20260122194737422.png)
 
-# AI技术介绍
+## AI技术介绍
 
-## Agent
+### Agent
 
 ![image-20260122195831225](techOfBigModel.assets/image-20260122195831225.png)
 
@@ -46,11 +48,11 @@ tag:
 
 ![image-20260122204106032](techOfBigModel.assets/image-20260122204106032.png)
 
-## Prompt
+### Prompt
 
 提示词工程，用户输入
 
-## Function Call
+### Function Call
 
 与外部函数或API交互的能力，通过理解语义来结构化调用信息，询问用户补全信息，然后结构化调用工具，基于返回的结构化信息，整合生成回复
 
@@ -60,16 +62,16 @@ tag:
 
 答案：考虑从LLM基座模型或者选型上去思考
 
-## RAG
+### RAG
 
 通过从外部资源或数据库中纳入相关信息来实现
 
-## Fine Tuning
+### Fine Tuning
 
 微调（可能不需要，但是复杂场景需要，可以先考虑模型的选型）
 
 ![image-20260122205126838](techOfBigModel.assets/image-20260122205126838.png)
 
-# 必须要懂的算法原理
+## 必须要懂的算法原理
 
 ![image-20260122210629661](techOfBigModel.assets/image-20260122210629661.png)
