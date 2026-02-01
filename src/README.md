@@ -3,7 +3,8 @@ home: true
 layout: Blog
 icon: house
 title: 主页
-bgImage: /20250527-2.jpg
+# bgImage: /20250527-2.jpg
+bgImage: https://file.mo7.cc/api/public/bz
 # heroImage: /avatar.png
 heroText: 欢迎来到 Rochsen 的博客
 heroFullScreen: true

@@ -30,6 +30,14 @@ background: rgba(253, 230, 138, 0.15)
 ## 博客灵感
 
 ```component VPCard
+title: 墨七
+desc: 墨染七弦月，笔耕半亩田
+logo: https://mo7.cc/pwa/144.png
+link: https://mo7.cc/
+background: rgba(253, 230, 138, 0.15)
+```
+
+```component VPCard
 title: 安和鱼
 desc: 生活明朗，万物可爱
 logo: https://blog.anheyu.com/logo.svg
