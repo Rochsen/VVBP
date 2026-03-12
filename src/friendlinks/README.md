@@ -6,23 +6,44 @@ breadcrumb: false
 pageInfo: false
 contributors: false
 editLink: false
-lastUpdated: false
+lastUpdated: true
 prev: false
 next: false
 comment: false
-footer: false
+footer: ""
+# copyright: 自定义版权信息
 sidebar: false
-toc: false
+toc: true
 ---
 
+# YIJISAD
 
 ## 框架作者
+
+```component VPCard
+title: Vuepress-theme-hope
+desc: 极简的 VuePress 主题案例
+logo: https://theme-hope-assets.vuejs.press/logo.svg
+link: https://theme-hope.vuejs.press/zh/demo/
+background: rgba(253, 230, 138, 0.15)
+```
+
 
 ```component VPCard
 title: Mr.Hope
 desc: Where there is light, there is hope
 logo: https://mister-hope.com/logo.svg
 link: https://mister-hope.com
+background: rgba(253, 230, 138, 0.15)
+```
+
+## 文档灵感
+
+```component VPCard
+title: PVZGE
+desc: 完全重制的全桌面平台PvZ2
+logo: https://pvzge.com/pvz_logo@200.webp
+link: https://pvzge.com/
 background: rgba(253, 230, 138, 0.15)
 ```
 

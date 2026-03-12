@@ -33,10 +33,3 @@ toc: true
 
 <Catalog />
 
-<AboutPageVue />
-
-
-<script setup>
-import AboutPageVue from "@source/.vuepress/components/About/App.vue";
-
-</script>

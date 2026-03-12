@@ -1,7 +1,19 @@
 <template>
-  <div>
-    <!-- <el-button type="success" size="default">这是一个按钮</el-button> -->
-  </div>
+  <a-flex gap="small" wrap>
+    <a-button type="primary">
+      Primary Button
+    </a-button>
+    <a-button>Default Button</a-button>
+    <a-button type="dashed">
+      Dashed Button
+    </a-button>
+    <a-button type="text">
+      Text Button
+    </a-button>
+    <a-button type="link">
+      Link Button
+    </a-button>
+  </a-flex>
 </template>
 
 <script setup lang="ts">
