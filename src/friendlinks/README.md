@@ -13,10 +13,17 @@ comment: false
 footer: ""
 # copyright: 自定义版权信息
 sidebar: false
-toc: true
+toc: false
+article: false
 ---
 
-# YIJISAD
+<!-- more -->
+
+> [!tip] 
+> 用于收集我自认为十分厉害的博客或文档，集思广益，权当书签
+>
+
+
 
 ## 框架作者
 

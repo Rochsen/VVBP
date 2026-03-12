@@ -23,9 +23,9 @@ sticky: true
 # 此页面会出现在星标文章中
 star: true
 # 你可以自定义页脚
-footer: 这是测试显示的页脚
+# footer: 这是测试显示的页脚
 # 你可以自定义版权信息
-copyright: 无版权
+# copyright: 无版权
 ---
 
 `more` 注释之前的内容被视为文章摘要。
@@ -63,6 +63,15 @@ title: 页面标题
 
 - 你可以将图片和 Markdown 文件放置在一起使用相对路径进行引用。
 - 对于 `.vuepress/public` 文件夹的图片，请使用绝对链接 `/` 进行引用。
+
+:::
+
+
+::: tip 引用tip
+
+> [!tip]
+> test
+> 
 
 :::
 

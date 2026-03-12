@@ -3,6 +3,7 @@ title: 技术栈
 icon: code
 order: 1
 navbar: true
+index: true
 # sidebar: false
 
 breadcrumb: true
@@ -17,7 +18,11 @@ footer: false
 
 backtotop: true
 toc: true
+article: false
 ---
+
+<!-- more -->
+
 
 <AboutPageVue />
 

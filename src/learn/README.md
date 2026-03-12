@@ -8,6 +8,7 @@ pageInfo: false
 breadcrumb: false
 toc: true
 comment: false
+article: false
 ---
 
 <Catalog />

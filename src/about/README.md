@@ -23,8 +23,10 @@ footer: false
 
 backtotop: true
 toc: true
+article: false
 ---
 
+<!-- more -->
 
 > [!tip]
 > 点击侧边栏可以看具体个人分类
