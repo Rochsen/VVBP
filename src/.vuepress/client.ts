@@ -3,14 +3,13 @@ import { defineClientConfig } from "vuepress/client";
 // import ElementPlus from "element-plus";
 // import "element-plus/dist/index.css";
 
-// 全量引入TDesign
-import TDesign from "tdesign-vue-next";
-import 'tdesign-vue-next/es/style/index.css';
+// 全量引入Antdv-next
+import AntdvNext from "antdv-next";
+import "antdv-next/dist/antd.css";
 
 export default defineClientConfig({
   enhance({ app }) {
-    // 注册element-plus
-    // app.use(ElementPlus);
-    app.use(TDesign);
+    // 注册AntdV-next
+    app.use(AntdvNext);
   },
 });
