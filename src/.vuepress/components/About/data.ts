@@ -1,49 +1,82 @@
+import pySvg from "/skills/py.svg";
+import fastapiSvg from "/skills/fastapi.svg";
+import databaseSvg from "/skills/sqlite.svg";
+import vueSvg from "/skills/vue.svg";
+import tsSvg from "/skills/typescript.svg";
+import tailwindcssSvg from "/skills/tailwindcss.svg";
+import html5Svg from "/skills/HTML5.svg";
+import cssSvg from "/skills/css.svg";
+import dockerSvg from "/skills/docker.svg";
+import linuxSvg from "/skills/linux.svg";
+import gitSvg from "/skills/git.svg";
+import markdownSvg from "/skills/markdown.svg";
+import pytorchSvg from "/skills/pytorch.svg";
+import tensorflowSvg from "/skills/tensorflow.svg";
+import elementPlusSvg from "/skills/element-plus.svg";
+import antdSvg from "/skills/antd.svg";
+import pandasSvg from "/skills/pandas.svg";
+import nodejsSvg from "/skills/Node.js.svg";
+
 export const skills = [
+  { name: "Linux", svg: linuxSvg, url: "https://www.linux.org/" },
+  { name: "Git", svg: gitSvg, url: "https://git-scm.com/" },
   {
     name: "Python",
-    svg: "/skills/py.svg",
-    bg: "bg-white",
+    svg: pySvg,
     url: "https://www.python.org/",
   },
+  { name: "pandas", svg: pandasSvg, url: "https://pandas.pydata.org/" },
   {
     name: "FastApi",
-    svg: "/skills/fastapi.png",
-    bg: "bg-green-400",
+    svg: fastapiSvg,
     url: "https://fastapi.tiangolo.com/",
   },
   {
     name: "Sqlite3",
-    svg: "/skills/database.png",
-    bg: "bg-white",
+    svg: databaseSvg,
     url: "https://www.sqlite.org/index.html",
   },
+  { name: "Docker", svg: dockerSvg, url: "https://www.docker.com/" },
+  { name: "PyTorch", svg: pytorchSvg, url: "https://pytorch.org/" },
+  {
+    name: "TensorFlow",
+    svg: tensorflowSvg,
+    url: "https://www.tensorflow.org/",
+  },
+  { name: "Node.js", svg: nodejsSvg, url: "https://nodejs.org/" },
   {
     name: "Vue3",
-    svg: "/skills/vue.svg",
-    bg: "bg-white",
+    svg: vueSvg,
     url: "https://cn.vuejs.org/",
   },
   {
     name: "Typescript",
-    svg: "/skills/ts.png",
-    bg: "bg-blue-300",
+    svg: tsSvg,
     url: "https://www.typescriptlang.org/",
   },
   {
-    name: "Tailwindcss",
-    svg: "/skills/tailwindcss.ico",
-    bg: "bg-white",
+    name: "Html",
+    svg: html5Svg,
+    url: "https://www.w3schools.com/html/",
+  },
+  {
+    name: "Css",
+    svg: cssSvg,
+    url: "https://www.w3schools.com/css/",
+  },
+  {
+    name: "TailwindCss",
+    svg: tailwindcssSvg,
     url: "https://tailwind.nodejs.cn/docs",
   },
   {
-    name: "shadcn-vue",
-    svg: "/skills/shadcn.ico",
-    bg: "bg-white",
-    url: "https://ui.shadcn.com/",
+    name: "Element-plus",
+    svg: elementPlusSvg,
+    url: "https://element-plus.org/",
   },
-  // { name: 'Docker', svg: '/docker.svg', bg: 'bg-blue-700' },
+  { name: "Antd-next", svg: antdSvg, url: "https://www.antdv-next.com/index-cn" },
+  { name: "Markdown", svg: markdownSvg, url: "https://www.markdownguide.org/" },
 ];
-
 
 // 职业生涯记录 - 数据
 export const career = [

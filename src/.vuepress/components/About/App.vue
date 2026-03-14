@@ -26,8 +26,16 @@
     </div>
 
     <!-- 技术栈部分 -->
-    <div>
-      <div style="font-size: 30px; font-weight: bold; margin: 10px 0">技术栈</div>
+    <div class="tech-block">
+      <div class="tech-title">个人技术栈</div>
+      <div class="tech-skills">
+        <a-tag v-for="skill in skills" :key="skill.name" class="skill-tag" :href="skill.url" target="_blank">
+          <a-space size="small">
+            <img :src="skill.svg" class="skill-icon" />
+            <span>{{ skill.name }}</span>
+          </a-space>
+        </a-tag>
+      </div>
     </div>
 
     <!-- 教育背景 -->
@@ -36,8 +44,19 @@
     </div>
 
     <!-- 个人职业生涯纪录 -->
-    <div>
-      <div style="font-size: 30px; font-weight: bold; margin: 10px 0">个人职业生涯纪录</div>
+    <div class="career-block">
+      <div class="career-title">个人职业生涯记录</div>
+      <div class="timeline-container">
+        <a-timeline mode="vertical" class="custom-timeline">
+          <a-timeline-item v-for="item in career" :key="item.step"
+            :status="item.state === 'completed' ? 'success' : 'default'" class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-title">{{ item.title }}</div>
+              <div class="timeline-description">{{ item.description }}</div>
+            </div>
+          </a-timeline-item>
+        </a-timeline>
+      </div>
     </div>
 
     <!-- 个人游玩时间 -->
@@ -53,7 +72,8 @@
 </template>
 
 <script setup lang="ts">
-import "./index.scss"
+import "./index.css"
+import { skills, career } from "./data";
 
 defineOptions({
   name: 'AboutPageVue'

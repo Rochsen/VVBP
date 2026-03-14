@@ -1,0 +1,186 @@
+/* 欢迎块 */
+.welcome-block {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(40deg, rgb(58, 58, 235), cyan);
+  padding: 20px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 欢迎内容统一样式 */
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* 人格类型块 */
+.personality-type-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 225px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 人格类型块内容统一样式 */
+.personality-type-block-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px
+}
+
+/* 人格图片样式 */
+.istp-img-style {
+  height: 200px;
+  animation: swing 2s ease-in-out infinite;
+}
+
+/* 去掉a标签的after伪类样式 */
+.personality-link::after {
+  display: none !important;
+}
+
+/* 左右循环摆动动画 */
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* 技能块 */
+.tech-block {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column; 
+}
+
+/* 技术栈标题 */
+.tech-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* 技能容器 */
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* 技能标签样式 */
+.skill-tag {
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+}
+
+.skill-tag::after {
+  display: none !important;
+}
+
+/* 技能标签样式-鼠标悬浮 */
+.skill-tag:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  /* 向上移动 */
+  transform: translateY(-5px);
+}
+
+/* 技能图标样式 */
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 个人职业生涯纪录块 */
+.career-block {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 职业生涯标题 */
+.career-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* 时间线容器 */
+.timeline-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+/* 自定义时间线 */
+.custom-timeline {
+  padding-left: 30px;
+}
+
+/* 时间线项 */
+.timeline-item {
+  position: relative;
+}
+
+/* 时间线内容 */
+.timeline-content {
+  padding: 5px 0;
+}
+
+/* 时间线标题 */
+.timeline-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* 时间线描述 */
+.timeline-description {
+  font-size: 14px;
+  color: #666;
+  margin-left: 24px;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .personality-type-code {
+    font-size: 30px !important;
+  }
+  .personality-type-block-content {
+    padding: 0 10px;
+}
+  .personality-type-name {
+    font-size: 20px !important; 
+}
+}
