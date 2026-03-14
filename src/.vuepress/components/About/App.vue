@@ -1,17 +1,19 @@
 <template>
   <a-flex gap="small" wrap>
     <a-button type="primary">
-      Primary Button
+      职业生涯
     </a-button>
-    <a-button>Default Button</a-button>
+    <a-button type="primary">
+      联系我
+    </a-button>
     <a-button type="dashed">
-      Dashed Button
+      歌单
     </a-button>
     <a-button type="text">
-      Text Button
+      喜爱的游戏
     </a-button>
     <a-button type="link">
-      Link Button
+      技术栈
     </a-button>
   </a-flex>
 </template>

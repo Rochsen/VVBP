@@ -11,5 +11,3 @@ comment: false
 article: false
 ---
 
-<Catalog />
-

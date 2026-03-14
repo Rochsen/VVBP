@@ -7,7 +7,7 @@ export const sideBarConfig = sidebar({
   "/learn/deploy/": deploy,
   "/learn/aiApplicationEngineer": zhihuAi,
 
-  "/about/": "structure",
+  // "/about/": "structure",
   "/strategy/": [
     {
       text: "游戏",

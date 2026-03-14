@@ -6,8 +6,9 @@ category: 指南
 tag:
     - 使用指南
     - 部署
-sticky: true
 breadcrumb: true
+sticky: true
+star: true
 ---
 
 <!-- more -->

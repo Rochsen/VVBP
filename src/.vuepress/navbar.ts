@@ -3,14 +3,14 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   // 主页
   "/",
-  // 笔记
-  "/learn/",
   // 关于
   "/about/",
-  // 攻略
-  "/strategy/",
   // 友链
   "/friendlinks/",
+  // 笔记
+  "/learn/",
+  // 攻略
+  "/strategy/",
 
   // {
   //   text: "攻略",

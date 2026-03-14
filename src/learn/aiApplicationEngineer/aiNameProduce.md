@@ -5,6 +5,8 @@ category:
   - 教程
 tag:
   - AI
+sticky: true
+star: true
 ---
 
 <!-- more -->

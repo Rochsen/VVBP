@@ -1,10 +1,12 @@
 ---
-title: 公开课
+title: AI 大模型应用公开课
 date: 2026-01-22
 category:
   - 教程
 tag:
   - AI
+sticky: true
+# article: false
 ---
 
 <!-- more -->

@@ -1,6 +1,6 @@
 ---
 # 这是文章的标题
-title: 页面配置
+title: 页面配置教程
 # 你可以自定义封面图片
 # cover: /assets/images/cover1.jpg
 # 这是页面的图标
@@ -21,7 +21,7 @@ tag:
 # 此页面会在文章列表置顶
 sticky: true
 # 此页面会出现在星标文章中
-star: true
+star: 99
 # 你可以自定义页脚
 # footer: 这是测试显示的页脚
 # 你可以自定义版权信息
