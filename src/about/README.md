@@ -1,11 +1,11 @@
 ---
-title: 关于
+title: 自我介绍
 index: false
-icon: at
+# icon: at
 category:
-  - 自我介绍
+  - 页面
 tag:
-  - 介绍
+  - 自我介绍
 navbar: true
 # sidebar: false
 breadcrumb: false

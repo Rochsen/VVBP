@@ -4,7 +4,11 @@ export default navbar([
   // 主页
   "/",
   // 关于
-  "/about/",
+  {
+    text: "关于",
+    link: "/about/",
+    icon: "at",
+  },
   // 友链
   "/friendlinks/",
   // 笔记
