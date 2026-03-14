@@ -1,5 +1,5 @@
 <template>
-  <a-flex gap="small" wrap>
+  <!-- <a-flex gap="small" wrap>
     <a-button type="primary">
       职业生涯
     </a-button>
@@ -15,7 +15,12 @@
     <a-button type="link">
       技术栈
     </a-button>
-  </a-flex>
+  </a-flex> -->
+  <div id="about-page">
+    <div class="text-center text-5xl font-bold text-cyan-600">
+      关于我
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -26,4 +31,8 @@ defineOptions({
 
 </script>
 
-<style scoped></style>
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>
