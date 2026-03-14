@@ -115,7 +115,7 @@
 </template>
 
 <script setup lang="ts">
-import "./index.css"
+import "./index.scss"
 import { skills, career } from "./data";
 import {
   GithubOutlined,
