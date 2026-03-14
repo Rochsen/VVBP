@@ -20,7 +20,7 @@
         </div>
       </div>
       <!-- 人格图片 -->
-      <a href="https://www.16personalities.com/ch/istp-%E4%BA%BA%E6%A0%BC" target="_blank">
+      <a class="personality-link" href="https://www.16personalities.com/ch/istp-%E4%BA%BA%E6%A0%BC" target="_blank">
         <img class="istp-img-style" src="/about/ISTP-A.svg" />
       </a>
     </div>
@@ -101,5 +101,24 @@ defineOptions({
 /* 人格图片样式 */
 .istp-img-style {
   height: 200px;
+  animation: swing 2s ease-in-out infinite;
+}
+
+/* 去掉a标签的after伪类样式 */
+.personality-link::after {
+  display: none !important;
+}
+
+/* 人格类型图片左右摆动动画 */
+@keyframes swing {
+
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
 }
 </style>
