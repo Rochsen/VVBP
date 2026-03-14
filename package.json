@@ -21,7 +21,10 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
-    ]
+    ],
+    "patchedDependencies": {
+      "@v-c/picker": "patches/@v-c__picker.patch"
+    }
   },
   "dependencies": {
     "@antdv-next/icons": "^1.0.4",

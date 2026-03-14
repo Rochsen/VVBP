@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@v-c/picker':
+    hash: tzkk35vj5omxubm24p3zzlnwba
+    path: patches/@v-c__picker.patch
+
 importers:
 
   .:
@@ -4037,7 +4042,7 @@ snapshots:
       '@v-c/util': 1.0.18(vue@3.5.27)
       vue: 3.5.27
 
-  '@v-c/picker@1.0.4(dayjs@1.11.20)(vue@3.5.27)':
+  '@v-c/picker@1.0.4(patch_hash=tzkk35vj5omxubm24p3zzlnwba)(dayjs@1.11.20)(vue@3.5.27)':
     dependencies:
       '@v-c/overflow': 1.0.4(vue@3.5.27)
       '@v-c/resize-observer': 1.0.8(vue@3.5.27)
@@ -4841,7 +4846,7 @@ snapshots:
       '@v-c/mutate-observer': 1.0.1(vue@3.5.27)
       '@v-c/notification': 1.0.0(vue@3.5.27)
       '@v-c/pagination': 1.0.0(vue@3.5.27)
-      '@v-c/picker': 1.0.4(dayjs@1.11.20)(vue@3.5.27)
+      '@v-c/picker': 1.0.4(patch_hash=tzkk35vj5omxubm24p3zzlnwba)(dayjs@1.11.20)(vue@3.5.27)
       '@v-c/progress': 1.0.0(vue@3.5.27)
       '@v-c/qrcode': 1.0.0(vue@3.5.27)
       '@v-c/rate': 1.0.1(vue@3.5.27)
