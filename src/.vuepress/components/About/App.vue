@@ -5,7 +5,7 @@
       <div class="welcome-content">
         <span style="font-size: 18px">你好，很高兴认识你👋</span>
         <span style="font-size: 30px; font-weight: bold; margin: 10px 0">我叫 罗浩森</span>
-        <span style="font-size: 16px">是一位 生物信息分析/前端开发工程师</span>
+        <span style="font-size: 16px">是一位 全栈式生信分析开发工程师</span>
       </div>
     </div>
 
@@ -78,19 +78,6 @@
       </a>
     </div>
 
-    <!-- 兴趣爱好 -->
-    <!-- <div class="hobby-block">
-      <div class="hobby-title">兴趣爱好</div>
-      <div class="hobby-content">
-        <a-tag v-for="hobby in hobbies" :key="hobby" class="hobby-tag" :href="hobby.url" target="_blank">
-          <a-space size="small">
-            <img :src="hobby.svg" class="hobby-icon" />
-            <span>{{ hobby.name }}</span>
-          </a-space>
-        </a-tag>
-      </div>
-    </div> -->
-
     <!-- 联系 -->
     <div class="contact-block">
       <div style="font-size: 30px; font-weight: bold; margin: 10px 0; color: black">如何找到我？</div>
@@ -105,10 +92,10 @@
           <BilibiliOutlined />
           Bilibili
         </a-button>
-        <a-button style="border-radius: 10px; min-width: 150px;" color="orange" variant="solid" size="large">
+        <!-- <a-button style="border-radius: 10px; min-width: 150px;" color="orange" variant="solid" size="large">
           <MailOutlined />
           email
-        </a-button>
+        </a-button> -->
       </div>
     </div>
   </a-space>
