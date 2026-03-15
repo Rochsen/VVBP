@@ -1,26 +1,70 @@
 <template>
-    <a-table :columns="gameEvalColumns" :data-source="gameEvalList" :scroll="{ x: 'max-content' }"
-        :pagination="paginationConfig" @change="handleTableChange" class="game-table" />
+    <a-input-search v-model:value="inputGameVal" placeholder="搜索游戏名称" style="width: 100%;" :allowClear="true"
+        @search="onSearch" @clear="clearSearch">
+        <template #prefix>
+            <SearchOutlined />
+        </template>
+    </a-input-search>
+    <a-table :columns="gameEvalColumns" :data-source="tableData" :scroll="{ x: 'max-content' }"
+        :pagination="paginationConfig" @change="handleTableChange" class="game-table" bordered />
 </template>
 
 <script setup lang='ts'>
 import { ref } from 'vue'
 import { gameEvalList, gameEvalColumns } from './data.ts'
+import { SearchOutlined } from '@antdv-next/icons'
 
 defineOptions({
     name: 'gameEvalAppVue'
 })
 
+// 响应式数据
+const tableData = ref(gameEvalList)
+
+// 搜索框值
+const inputGameVal = ref('')
+
+
+// 搜索框改变时触发
+const onSearch = () => {
+    console.log("🚀 ~ onSearch ~ inputGameVal.value:", inputGameVal.value)
+
+    // 过滤出包含搜索值的游戏评价
+    const filteredList = tableData.value.filter((item) => item.gameName.includes(inputGameVal.value))
+
+    // 更新表格数据
+    tableData.value = filteredList
+    console.log("🚀 ~ onSearch ~ tableData.value:", tableData.value)
+
+    // 更新分页器配置
+    if (inputGameVal.value === '') {
+        tableData.value = gameEvalList
+    }
+    else {
+        tableData.value = filteredList
+    }
+
+    paginationConfig.value.total = tableData.value.length
+}
+
+// 清空搜索框时触发
+const clearSearch = () => {
+    tableData.value = gameEvalList
+}
+
+
+// 分页器配置
 const paginationConfig = ref({
     current: 1,
-    pageSize: 20,
-    total: gameEvalList.length,
+    pageSize: 10,
+    total: tableData.value.length,
     showSizeChanger: true,
     pageSizeOptions: ['10', '20', '50', '100'],
     showTotal: (total: number) => `共 ${total} 条数据`,
-    position: ['bottomCenter']
+    placement: ['bottomCenter']
 })
 
+// 分页器改变时触发
 const handleTableChange = (pagination: any) => {
     paginationConfig.value.current = pagination.current
     paginationConfig.value.pageSize = pagination.pageSize
@@ -29,11 +73,13 @@ const handleTableChange = (pagination: any) => {
 </script>
 
 <style scoped>
-
-
 .game-table {
     width: 100%;
     margin-top: 20px;
+}
+
+:deep(table) {
+    margin: 0
 }
 
 /* 确保表格单元格内容正确显示 */
@@ -97,8 +143,8 @@ const handleTableChange = (pagination: any) => {
 
 /* 表格边框样式 */
 :deep(.ant-table) {
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
+    /* border: 1px solid #f0f0f0; */
+    /* border-radius: 4px; */
 }
 
 :deep(.ant-table-thead > tr > th) {

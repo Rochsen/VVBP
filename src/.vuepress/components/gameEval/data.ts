@@ -9,12 +9,13 @@ export interface GameEvaluation {
   key: string;
 }
 
+// 表格列名
 export const gameEvalColumns = [
   {
     title: "游戏名称",
     dataIndex: "gameName",
     key: "gameName",
-    width: 180,
+    width: 250,
   },
   {
     title: "游戏分类",
@@ -38,13 +39,21 @@ export const gameEvalColumns = [
     title: "游戏时间",
     dataIndex: "gameTime",
     key: "gameTime",
-    width: 120,
+    width: 150,
+    sorter: {
+      compare: (a, b) => a.gameTime - b.gameTime,
+      multiple: 1,
+    },
   },
   {
     title: "我的评分",
     dataIndex: "myScore",
     key: "myScore",
-    width: 100,
+    width: 150,
+    sorter: {
+      compare: (a, b) => a.myScore - b.myScore,
+      multiple: 2,
+    },
     render: (_, record) => {
       return h(
         "span",
@@ -128,7 +137,7 @@ export const gameEvalList: GameEvaluation[] = [
   {
     gameName: "背包乱斗·福西法的宝藏",
     gameCategory: ["益智", "牌组构筑"],
-    gameTime: "2023-08-03",
+    gameTime: "65.6",
     myScore: 85,
     key: "9",
   },
@@ -479,77 +488,77 @@ export const gameEvalList: GameEvaluation[] = [
     gameName: "只狼·影逝二度",
     gameCategory: ["类魂", "武士"],
     gameTime: "1.66",
-    myScore: 90,
+    myScore: 0,
     key: "59",
   },
   {
     gameName: "求生之路4",
     gameCategory: ["第一人称射击"],
     gameTime: "1.6",
-    myScore: 80,
+    myScore: 0,
     key: "60",
   },
   {
     gameName: "地狱之刃",
     gameCategory: ["动作", "ASMR"],
     gameTime: "1.55",
-    myScore: 70,
+    myScore: 0,
     key: "61",
   },
   {
     gameName: "千恋万花",
     gameCategory: ["Galgame"],
     gameTime: "1.53",
-    myScore: 70,
+    myScore: 0,
     key: "62",
   },
   {
     gameName: "土豆兄弟",
     gameCategory: ["肉鸽"],
     gameTime: "1.53",
-    myScore: 85,
+    myScore: 0,
     key: "63",
   },
   {
     gameName: "Waves2",
     gameCategory: ["弹幕射击"],
     gameTime: "1.4",
-    myScore: 90,
+    myScore: 0,
     key: "64",
   },
   {
     gameName: "纪念碑谷",
     gameCategory: ["解谜"],
     gameTime: "1",
-    myScore: 80,
+    myScore: 0,
     key: "65",
   },
   {
     gameName: "异形工厂",
     gameCategory: ["益智"],
     gameTime: "1.0",
-    myScore: 80,
+    myScore: 0,
     key: "66",
   },
   {
     gameName: "幻兽帕鲁",
     gameCategory: ["生存", "建造"],
     gameTime: "1.0",
-    myScore: 90,
+    myScore: 0,
     key: "67",
   },
   {
     gameName: "空洞骑士",
     gameCategory: ["类银河恶魔城"],
     gameTime: "0.93",
-    myScore: 80,
+    myScore: 0,
     key: "68",
   },
   {
     gameName: "深海迷航",
     gameCategory: ["Galgame"],
     gameTime: "0.75",
-    myScore: 80,
+    myScore: 0,
     key: "69",
   },
   {
