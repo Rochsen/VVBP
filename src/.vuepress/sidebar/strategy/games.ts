@@ -1,6 +1,8 @@
 import { arraySidebar } from "vuepress-theme-hope";
 
 export const gamesSideBarConfig = arraySidebar([
+  // 个人评测
+  "evaluation",
   // 艾尔登法环 黑夜君临
   "nightReign",
   // 背包乱斗：福西法的宝藏
