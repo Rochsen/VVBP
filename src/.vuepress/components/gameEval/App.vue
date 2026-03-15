@@ -1,9 +1,9 @@
 <template>
     <a-input-search v-model:value="inputGameVal" placeholder="搜索游戏名称" style="width: 100%;" :allowClear="true"
         @search="onSearch" @clear="clearSearch">
-        <template #prefix>
+        <!-- <template #prefix>
             <SearchOutlined />
-        </template>
+        </template> -->
     </a-input-search>
     <a-table :columns="gameEvalColumns" :data-source="tableData" :scroll="{ x: 'max-content' }"
         :pagination="paginationConfig" @change="handleTableChange" class="game-table" bordered />
