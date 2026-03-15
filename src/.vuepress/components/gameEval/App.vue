@@ -12,7 +12,7 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
 import { gameEvalList, gameEvalColumns } from './data.ts'
-import { SearchOutlined } from '@antdv-next/icons'
+// import { SearchOutlined } from '@antdv-next/icons'
 
 defineOptions({
     name: 'gameEvalAppVue'
@@ -30,7 +30,7 @@ const onSearch = () => {
     console.log("🚀 ~ onSearch ~ inputGameVal.value:", inputGameVal.value)
 
     // 过滤出包含搜索值的游戏评价
-    const filteredList = tableData.value.filter((item) => item.gameName.includes(inputGameVal.value))
+    const filteredList = gameEvalList.filter((item) => item.gameName.includes(inputGameVal.value))
 
     // 更新表格数据
     tableData.value = filteredList
