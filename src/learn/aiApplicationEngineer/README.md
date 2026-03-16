@@ -1,7 +1,7 @@
 ---
 title: 大模型应用开发学习笔记
 icon: code
-# article: false
+article: false
 category:
   - 网课
 tag:
