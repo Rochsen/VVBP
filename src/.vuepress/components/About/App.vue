@@ -26,12 +26,12 @@
     <div class="career-block">
       <div class="career-content">
         <div class="career-title">个人职业生涯记录</div>
-        <div class="timeline-container">
+        <div class="career-timeline-container">
           <a-timeline class="custom-timeline">
-            <a-timeline-item v-for="item in career" :key="item.step" :dot="nodeChange(item)" class="timeline-item">
-              <div class="timeline-content">
-                <div class="timeline-title">{{ item.title }}</div>
-                <div class="timeline-description">{{ item.description }}</div>
+            <a-timeline-item v-for="item in career" :key="item.step" :dot="nodeChange(item)" class="career-timeline-item">
+              <div class="career-timeline-content">
+                <div class="career-timeline-title">{{ item.title }}</div>
+                <div class="career-timeline-description">{{ item.description }}</div>
               </div>
             </a-timeline-item>
           </a-timeline>
