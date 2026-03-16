@@ -103,7 +103,7 @@ export const gameEvalList: GameEvaluation[] = [
     gameName: "黑暗之魂3",
     gameCategory: ["魂类"],
     gameTime: "124.8",
-    myScore: 98,
+    myScore: 95,
     key: "4",
   },
   {
@@ -576,10 +576,10 @@ export const gameEvalList: GameEvaluation[] = [
     key: "71",
   },
   {
-    gameName: "你好，我们还有场恋爱没谈",
+    gameName: "你好，我们还有场恋爱没谈（番外篇）",
     gameCategory: ["互动影视"],
     gameTime: "0.5",
-    myScore: 0,
+    myScore: 85,
     key: "72",
   },
   {

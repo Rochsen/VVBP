@@ -76,6 +76,7 @@ const handleTableChange = (pagination: any) => {
 .game-table {
     width: 100%;
     margin-top: 20px;
+    /* height: 200px */
 }
 
 :deep(table) {
