@@ -6,7 +6,7 @@ export const gamesSideBarConfig = arraySidebar([
   // 艾尔登法环 黑夜君临
   "nightReign",
   // 背包乱斗：福西法的宝藏
-  "backpackBattle",
+  // "backpackBattle",
 
   //   {
   //     text: "艾尔登法环 黑夜君临",

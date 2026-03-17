@@ -1,12 +1,14 @@
 <template>
-    <a-input-search v-model:value="inputGameVal" placeholder="搜索游戏名称" style="width: 100%;" :allowClear="true"
-        @search="onSearch" @clear="clearSearch">
-        <!-- <template #prefix>
+    <div id="game-eval-page">
+       <a-input-search v-model:value="inputGameVal" placeholder="搜索游戏名称" style="width: 100%;" :allowClear="true"
+            @search="onSearch" @clear="clearSearch">
+            <!-- <template #prefix>
             <SearchOutlined />
         </template> -->
-    </a-input-search>
-    <a-table :columns="gameEvalColumns" :data-source="tableData" :scroll="{ x: 'max-content' }"
-        :pagination="paginationConfig" @change="handleTableChange" class="game-table" bordered />
+        </a-input-search>
+        <a-table :columns="gameEvalColumns" :data-source="tableData" :scroll="{ x: 'max-content' }"
+            :pagination="paginationConfig" @change="handleTableChange" class="game-table" bordered />
+    </div>
 </template>
 
 <script setup lang='ts'>
