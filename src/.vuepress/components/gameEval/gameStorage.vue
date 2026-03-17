@@ -67,7 +67,7 @@ const combinePicName = (name: string) => {
 
 // 点击查看详情，跳转到页面
 const handleClick = (item: any) => {
-  window.open(`/VVBP/strategy/games/${item.gameNameEn}`)
+  window.open(`/VVBP/strategy/games/${item.gameNameEn}`, '_parent')
 }
 
 </script>
