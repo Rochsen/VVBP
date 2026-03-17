@@ -1,7 +1,12 @@
 ---
 title: 个人评测
 breadcrumb: false
-article: false
+article: true
+category: 
+  - 游戏
+tag:
+  - 攻略
+date: 2026-03-15
 ---
 
 
