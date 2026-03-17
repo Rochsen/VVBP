@@ -1,5 +1,5 @@
 ---
-title: 个人评测
+title: 个人游戏统计
 breadcrumb: false
 article: true
 category: 
@@ -11,7 +11,7 @@ date: 2026-03-15
 
 
 > [!tip] 
-> 这是我个人对游玩过的游戏评测，如有与他人不一致的地方，按个人为准
+> 这是我个人对游玩过的游戏的简单统计
 >
 
 <gameEvalAppVue />

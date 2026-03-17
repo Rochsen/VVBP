@@ -1,5 +1,5 @@
 ---
-title: 游戏简要评测
+title: 印象游戏库
 breadcrumb: false
 article: true
 category: 
@@ -11,7 +11,7 @@ date: 2026-03-17
 
 
 > [!tip]
-> 游戏简要评测，尝试卡片形式
+> 游戏库，仿steam库，以卡片形式展示我游玩过的游戏
 >
 
 
@@ -21,7 +21,7 @@ date: 2026-03-17
 
 
 <script setup>
-    import gameEvalplanB from '@source/.vuepress/components/gameEval/planB.vue'
+    import gameEvalplanB from '@source/.vuepress/components/gameEval/gameStorage.vue'
 </script>
 
 

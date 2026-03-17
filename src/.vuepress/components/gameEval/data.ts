@@ -3,6 +3,7 @@ import { h } from "vue";
 // 游戏评价接口
 export interface GameEvaluation {
   gameName: string;
+  gameNameEn: string;
   gameCategory: string[];
   gameTime: string;
   myScore: number;
@@ -76,10 +77,30 @@ export const gameEvalColumns = [
   },
 ];
 
+// 游戏分类颜色映射
+export const categoryColors: Record<string, string> = {
+  类魂: "red",
+  魂类: "red",
+  动作: "orange",
+  Galgame: "yellow",
+  模拟经营: "gold",
+  历史: "brown",
+  多人合作: "green",
+  益智: "blue",
+  平台射击: "cyan",
+  恐怖: "geekblue",
+  解谜: "darkblue",
+  牌组构筑: "pink",
+  肉鸽: "purple",
+  互动影视: "purple",
+  工具: "default",
+};
+
 // 个人游戏评价列表
 export const gameEvalList: GameEvaluation[] = [
   {
     gameName: "艾尔登法环·黑夜君临",
+    gameNameEn: "nightReign",
     gameCategory: ["多人合作", "肉鸽"],
     gameTime: "885.5",
     myScore: 90,
@@ -87,6 +108,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "艾尔登法环",
+    gameNameEn: "EldenRing",
     gameCategory: ["类魂"],
     gameTime: "196",
     myScore: 90,
@@ -94,6 +116,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "暖雪",
+    gameNameEn: "WarmSnow",
     gameCategory: ["肉鸽"],
     gameTime: "136.3",
     myScore: 80,
@@ -101,6 +124,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "黑暗之魂3",
+    gameNameEn: "DarkSouls3",
     gameCategory: ["魂类"],
     gameTime: "124.8",
     myScore: 95,
@@ -108,6 +132,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "黑神话·悟空",
+    gameNameEn: "BlackMythWukong",
     gameCategory: ["动作"],
     gameTime: "114.8",
     myScore: 95,
@@ -115,6 +140,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "雀魂麻将",
+    gameNameEn: "MahjongSoul",
     gameCategory: ["益智", "恐怖"],
     gameTime: "110.8",
     myScore: 75,
@@ -122,6 +148,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "剑星",
+    gameNameEn: "SwordStar",
     gameCategory: ["动作"],
     gameTime: "108.5",
     myScore: 95,
@@ -129,6 +156,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "Sudoku Zenkai",
+    gameNameEn: "SudokuZenkai",
     gameCategory: ["益智"],
     gameTime: "67.6",
     myScore: 80,
@@ -136,6 +164,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "背包乱斗·福西法的宝藏",
+    gameNameEn: "BackpackBattles",
     gameCategory: ["益智", "牌组构筑"],
     gameTime: "65.6",
     myScore: 85,
@@ -143,6 +172,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "逃离鸭科夫",
+    gameNameEn: "EscapeFromTarkov",
     gameCategory: ["平台射击"],
     gameTime: "58.5",
     myScore: 90,
@@ -150,6 +180,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "无限机兵",
+    gameNameEn: "InfiniteMech",
     gameCategory: ["类魂"],
     gameTime: "33.8",
     myScore: 93,
@@ -157,6 +188,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "中国式相亲",
+    gameNameEn: "ChineseStyleBlindDate",
     gameCategory: ["模拟经营"],
     gameTime: "24.7",
     myScore: 85,
@@ -164,6 +196,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "叛逆神魂",
+    gameNameEn: "GodSoul",
     gameCategory: ["牌组构筑", "Galgame"],
     gameTime: "23.9",
     myScore: 85,
@@ -171,6 +204,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "火山的女儿",
+    gameNameEn: "DaughterOfVolcano",  
     gameCategory: ["模拟经营"],
     gameTime: "18.9",
     myScore: 90,
@@ -178,6 +212,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "苍翼·混沌效应",
+    gameNameEn: "BlazBlueChaosEffect",
     gameCategory: ["肉鸽"],
     gameTime: "18.2",
     myScore: 90,
@@ -185,6 +220,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "明末·渊虚之羽",
+    gameNameEn: "LateMingFeatherOfThebyss",
     gameCategory: ["类魂"],
     gameTime: "14.9",
     myScore: 90,
@@ -192,6 +228,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "盛世天下·媚娘篇",
+    gameNameEn: "PWMeiNiangChapter",
     gameCategory: ["历史", "互动影视"],
     gameTime: "13.8",
     myScore: 92,
@@ -199,13 +236,15 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "底特律·化身为人",
+    gameNameEn: "DetroitBecomeHuman",
     gameCategory: ["互动影视"],
     gameTime: "13.2",
     myScore: 95,
-    key: "1222670",
+    key: "1222140",
   },
   {
     gameName: "江山北望",
+    gameNameEn: "NorthLookingAtTheCountry",
     gameCategory: ["互动影视"],
     gameTime: "13.1",
     myScore: 93,
@@ -213,6 +252,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "药剂工艺·炼金模拟器",
+    gameNameEn: "PotionCraftAlchemistSimulator",
     gameCategory: ["模拟经营"],
     gameTime: "12.7",
     myScore: 85,
@@ -220,6 +260,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "恋爱从离别开始",
+    gameNameEn: "LoveStartFromParting",
     gameCategory: ["互动影视"],
     gameTime: "11.4",
     myScore: 91,
@@ -227,6 +268,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "完蛋我被美女包围了2",
+    gameNameEn: "OhNo2",
     gameCategory: ["互动影视"],
     gameTime: "11.1",
     myScore: 90,
@@ -234,6 +276,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "Balatro",
+    gameNameEn: "Balatro",
     gameCategory: ["牌组构筑"],
     gameTime: "10.9",
     myScore: 90,
@@ -241,6 +284,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "飞跃十三号房",
+    gameNameEn: "LeapOverRoom13",
     gameCategory: ["互动影视"],
     gameTime: "10.6",
     myScore: 94,
@@ -248,6 +292,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "无尽星火",
+    gameNameEn: "EndlessSpark",
     gameCategory: ["肉鸽"],
     gameTime: "10.2",
     myScore: 90,
@@ -255,6 +300,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "你好，我们还有场恋爱没谈",
+    gameNameEn: "HelloWSHAL2TalkAbout",
     gameCategory: ["互动影视"],
     gameTime: "10",
     myScore: 92,
@@ -262,6 +308,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "我在地府打麻将",
+    gameNameEn: "PlayMahjongUnderworld",
     gameCategory: ["牌组构筑"],
     gameTime: "9.7",
     myScore: 93,
@@ -269,6 +316,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "美女请别影响我成仙",
+    gameNameEn: "BeautyPleaseAffectImmortality",
     gameCategory: ["互动影视"],
     gameTime: "9.5",
     myScore: 91,
@@ -276,6 +324,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "疑案追声",
+    gameNameEn: "Unheard",
     gameCategory: ["益智", "解谜"],
     gameTime: "8.9",
     myScore: 82,
@@ -283,6 +332,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "美女请别影响我学习",
+    gameNameEn: "BeautyPleaseDontAffectMyStudy",
     gameCategory: ["互动影视"],
     gameTime: "8.6",
     myScore: 95,
@@ -290,6 +340,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "情感反炸模拟器",
+    gameNameEn: "EmotionalAntiFraraudSimulator",
     gameCategory: ["互动影视"],
     gameTime: "8.2",
     myScore: 91,
@@ -297,6 +348,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "甜心AI追捕计划",
+    gameNameEn: "SweetheartAIHuntPlan",
     gameCategory: ["互动影视"],
     gameTime: "8.2",
     myScore: 85,
@@ -304,6 +356,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "There is no game",
+    gameNameEn: "ThereIsNoGame",
     gameCategory: ["解谜"],
     gameTime: "8",
     myScore: 95,
@@ -311,6 +364,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "我的同事不对劲",
+    gameNameEn: "MyColleagueIsNotRight",
     gameCategory: ["互动影视"],
     gameTime: "7.7",
     myScore: 83,
@@ -318,13 +372,14 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "荒岛求生: 逃出美女岛",
+    gameNameEn: "SurvBeautyIsland",
     gameCategory: ["互动影视"],
-    gameTime: "7.4",
     myScore: 70,
     key: "3531160",
   },
   {
     gameName: "咸鱼殿下",
+    gameNameEn: "SaltedFishPrince",
     gameCategory: ["互动影视"],
     gameTime: "7.3",
     myScore: 92,
@@ -332,6 +387,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "阿西,美女室友竟然...",
+    gameNameEn: "OhNoMyBeautifulRoommateActually",
     gameCategory: ["互动影视"],
     gameTime: "6.8",
     myScore: 91,
@@ -339,6 +395,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "心动恋旅: 樱花篇",
+    gameNameEn: "HeartbeatLoveJourneyCherryBlossomChapter",
     gameCategory: ["互动影视"],
     gameTime: "6.3",
     myScore: 91,
@@ -346,6 +403,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "恶魔轮盘",
+    gameNameEn: "DevilRoulette",
     gameCategory: ["益智", "牌组构筑"],
     gameTime: "6.2",
     myScore: 92,
@@ -353,6 +411,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "泡芙爱情故事",
+    gameNameEn: "PuffLoveStory",
     gameCategory: ["Galgame"],
     gameTime: "5.7",
     myScore: 90,
@@ -360,6 +419,7 @@ export const gameEvalList: GameEvaluation[] = [
   },
   {
     gameName: "Wallpaper Engine",
+    gameNameEn: "WallpaperEngine",
     gameCategory: ["工具"],
     gameTime: "939.4",
     myScore: 100,

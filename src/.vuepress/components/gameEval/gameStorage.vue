@@ -1,0 +1,76 @@
+
+<template>
+    <div class="gameEvalplanB">
+      <a-row :gutter="[16, 16]">
+        <a-col :span="6" v-for="(item, index) in gameEvalList">
+          <a-card hoverable style="width: 180px">
+            <!-- 封面 -->
+            <template #cover>
+              <img
+                draggable="false"
+                alt="noPic"
+                :src="combinePicName(item.key)"
+              />
+            </template>
+            <!-- body -->
+            <a-card-meta>
+                <template #title>
+                    <a-tooltip :title="item.gameName">
+                        <span>{{ item.gameName }}</span>
+                    </a-tooltip>
+                </template>
+                <template #description>
+                  <a-tag 
+                  v-for="(category, index) in item.gameCategory" 
+                  :key="index" 
+                  :color="getCategoryColor(category)">{{ category }}</a-tag>
+                </template>
+            </a-card-meta>
+            <!-- 操作按钮区 -->
+            <template #actions>
+                <!-- 心动值 -->
+                <a-space :gutter="[16, 16]">
+                  <HeartFilled style="color: red;" />
+                  <a-tooltip title="喜爱度">
+                    <span style="color: red;">{{ item.myScore }}</span>
+                  </a-tooltip>
+                </a-space>
+
+                <!-- 查看详情，跳转到页面 -->
+                <a-tooltip title="查看详情">
+                  <EyeFilled style="color: #000" @click="handleClick(item)" />
+                </a-tooltip>
+            </template>
+          </a-card>
+        </a-col>
+      </a-row>
+    </div>
+</template>
+
+<script setup lang='ts'>
+import { gameEvalList, categoryColors } from './data.ts'
+import { HeartFilled, EyeOutlined, EyeFilled, EyeTwoTone } from '@antdv-next/icons'
+
+defineOptions({
+    name: 'gameEvalplanB'
+})
+
+// 获取分类对应的颜色
+const getCategoryColor = (category: string) => {
+  return categoryColors[category] || "default"
+}
+
+// 图片路径拼接
+const combinePicName = (name: string) => {
+  return `/VVBP/game/600900/${name}.jpg`
+}
+
+// 点击查看详情，跳转到页面
+const handleClick = (item: any) => {
+  window.open(`/VVBP/strategy/games/${item.gameNameEn}`)
+}
+
+</script>
+
+<style scoped>
+</style>
