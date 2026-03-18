@@ -5,7 +5,7 @@
         <a-card hoverable style="width: 180px">
           <!-- 封面 -->
           <template #cover>
-            <img draggable="false" alt="noPic" :src="combinePicName(item.key)" />
+            <img draggable="false" alt="noPic" :src="combinePicName(item.key)" loading="lazy" />
           </template>
           <!-- body -->
           <a-card-meta>

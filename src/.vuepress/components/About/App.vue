@@ -15,7 +15,7 @@
       <div class="tech-skills">
         <a-tag v-for="skill in skills" :key="skill.name" class="skill-tag" :href="skill.url" target="_blank">
           <a-space size="small">
-            <img :src="skill.svg" class="skill-icon" />
+            <img :src="skill.svg" class="skill-icon" loading="lazy" />
             <span>{{ skill.name }}</span>
           </a-space>
         </a-tag>
@@ -44,7 +44,7 @@
       <div class="background-title">教育背景</div>
       <div class="background-content">
         <a-space class="background-item" size="large">
-          <img src="/about/zhkulogo.png" width="120" height="120" />
+          <img src="/about/zhkulogo.png" width="120" height="120" loading="lazy" />
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="background-item-time">2018.09 ~ 2022.06</div>
             <div class="background-item-title">仲恺农业工程学院 (本科)</div>
@@ -52,7 +52,7 @@
           </div>
         </a-space>
         <a-space class="background-item" size="large">
-          <img src="/about/gszx.png" width="120" height="120" />
+          <img src="/about/gszx.png" width="120" height="120" loading="lazy" />
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="background-item-time">2015.09 ~ 2018.06</div>
             <div class="background-item-title">中山市桂山中学 (高中)</div>
@@ -74,7 +74,7 @@
       </div>
       <!-- 人格图片 -->
       <a class="personality-link" href="https://www.16personalities.com/ch/istp-%E4%BA%BA%E6%A0%BC" target="_blank">
-        <img class="istp-img-style" src="/about/ISTP-A.svg" />
+        <img class="istp-img-style" src="/about/ISTP-A.svg" loading="lazy" />
       </a>
     </div>
 
