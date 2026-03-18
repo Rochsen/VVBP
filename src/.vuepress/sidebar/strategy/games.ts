@@ -1,10 +1,10 @@
 import { arraySidebar } from "vuepress-theme-hope";
 
 export const gamesSideBarConfig = arraySidebar([
-  // 数据统计
-  "dataStat",
   // 印象游戏库
   "gameStorage",
+  // 数据统计
+  "dataStat",
   // 艾尔登法环 黑夜君临
   "nightReign",
   // 背包乱斗：福西法的宝藏

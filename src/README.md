@@ -4,8 +4,13 @@ layout: Blog
 icon: house
 title: 主页
 # bgImage: /20250527-2.jpg
-bgImage: https://file.mo7.cc/api/public/bz
-# heroImage: /avatar.png
+# bgImage: light-bgimage-1.png
+# bgImage: https://file.mo7.cc/api/public/bz
+# bgImageDark: /dark-bgimage-1.png
+bgImage: /light-bgimage-2.png
+bgImageDark: /dark-bgimage-2.jpg
+# heroImage: /wechat-avatar.png
+# heroImageDark: /avatar.png
 heroText: 欢迎来到 Rochsen 的博客
 heroFullScreen: true
 tagline: 只有风暴才能击倒大树
