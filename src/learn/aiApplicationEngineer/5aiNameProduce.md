@@ -1,10 +1,8 @@
 ---
 title: AI 概念通俗解释大全
 date: 2026-01-29
-category:
-  - 教程
-tag:
-  - AI
+category: [教程, 知乎]
+tag: [AI, 概念]
 sticky: true
 star: true
 ---
