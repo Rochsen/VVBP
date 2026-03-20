@@ -108,5 +108,5 @@ star: true
 ## 就业培训系列
 
 - [第十一节：开发框架相关简历+面试问题辅导](./11aiJobInterview.md)
-- [第三十四节：RAG相关简历+面试问题辅导](./34ragJobInterview.md)、
+- [第三十四节：RAG相关简历+面试问题辅导](./34ragJobInterview.md)
 - [第四十节：Agent相关简历+面试问题辅导](./40agentJobInterview.md)
