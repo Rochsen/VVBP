@@ -1,5 +1,5 @@
 ---
-title: 多模态AI入门指南：从看到说到创造
+title: 多模态AI入门指南
 author: 罗浩森
 date: 2026-03-20
 category: [教程, 知乎]

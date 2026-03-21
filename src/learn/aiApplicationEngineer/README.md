@@ -9,6 +9,12 @@ tag:
 star: true
 ---
 
+> [!tip]
+> 所有内容为AI Agent编写，仅供个人学习和研究，请勿用于商业用途
+> 
+> 目前文档用到的Agent举例：Kimi、千问、Minimax、GLM等
+> 
+
 ## 第一部分: 现在的AI是什么
 
 - [第一节：公开课](./1techOfBigModel.md)
