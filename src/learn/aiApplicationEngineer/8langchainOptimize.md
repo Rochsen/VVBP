@@ -9,21 +9,6 @@ tags: [AI, HuggingFace]
 
 # HuggingFace生态实战：从模型应用到高效微调
 
-## 目录
-
-1. [HuggingFace简介](#1-huggingface简介)
-2. [HuggingFace核心概念](#2-huggingface核心概念)
-3. [Transformer架构三大流派](#3-transformer架构三大流派)
-4. [Pipeline：一行代码实现AI功能](#4-pipeline一行代码实现ai功能)
-5. [深入核心组件：Tokenizer](#5-深入核心组件tokenizer)
-6. [深入核心组件：Model](#6-深入核心组件model)
-7. [全量微调详解](#7-全量微调详解)
-8. [实战案例：垃圾邮件分类器](#8-实战案例垃圾邮件分类器)
-9. [实战案例：大模型Qwen应用](#9-实战案例大模型qwen应用)
-10. [总结与最佳实践](#10-总结与最佳实践)
-
----
-
 ## 1. HuggingFace简介
 
 ### 1.1 什么是HuggingFace
