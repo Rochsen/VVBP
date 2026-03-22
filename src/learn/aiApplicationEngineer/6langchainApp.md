@@ -1233,6 +1233,12 @@ graph TD
 
 对于希望深入学习LangChain的开发者，建议按照以下路径循序渐进：首先熟练掌握基础Chain和Prompt模板的使用，理解LCEL的核心概念；然后学习工具系统的使用和自定义工具的开发；接着深入研究Agent和ReAct范式，尝试构建自己的智能Agent；最后根据实际项目需求，学习LangGraph等进阶框架，掌握复杂工作流的设计能力。  
 
----
+## requirement
 
-*本文档由MiniMax Agent整理编写，专注于帮助程序员系统学习LangChain框架。*
+```python
+dashscope==1.22.1
+langchain==1.0.2
+langchain_community==0.4
+langchain_core==1.0.1
+```
+
