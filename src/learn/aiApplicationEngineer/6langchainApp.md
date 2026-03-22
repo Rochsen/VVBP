@@ -7,22 +7,6 @@ tags: [AI, Langchain]
 
 <!-- more -->
 
-## 目录
-
-1. [什么是LangChain?](#1-什么是langchain)
-2. [LangChain 1.0版本重大变化](#2-langchain-10版本重大变化)
-3. [核心组件详解](#3-核心组件详解)
-4. [基础案例:Prompt + LLM](#4-基础案例prompt--llm)
-5. [Agent与Tools](#5-agent与tools)
-6. [Memory记忆组件](#6-memory记忆组件)
-7. [ReAct范式详解](#7-react范式详解)
-8. [本地知识智能客服案例](#8-本地知识智能客服案例)
-9. [工具链组合设计](#9-工具链组合设计)
-10. [LCEL构建任务链](#10-lcel构建任务链)
-11. [AI Agent工具对比](#11-ai-agent工具对比)
-
----
-
 
 ## 第一部分：LangChain基础概念
 
