@@ -73,6 +73,9 @@ export default hopeTheme(
       imgSize: true,
       include: true,
       mark: true,
+      math: {
+        type: "katex",
+      },
       mermaid: true,
       plantuml: true,
       spoiler: true,
