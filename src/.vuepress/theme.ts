@@ -38,6 +38,7 @@ export default hopeTheme(
         BiliBili: "https://space.bilibili.com/361524948",
         GitHub: "https://github.com/Rochsen",
         Steam: "https://steamcommunity.com/profiles/76561199143139420/",
+        LeetCode: "https://leetcode.cn/u/rochsen/",
       },
     },
 
