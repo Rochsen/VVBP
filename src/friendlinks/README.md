@@ -54,6 +54,14 @@ link: https://pvzge.com/
 background: rgba(253, 230, 138, 0.15)
 ```
 
+```component VPCard
+title: 鱼皮ai编程导航
+desc: 打造最强 AI 社区
+logo: https://ai.codefather.cn/favicon.ico
+link: https://ai.codefather.cn/
+background: rgba(253, 230, 138, 0.15)
+```
+
 
 ## 博客灵感
 
