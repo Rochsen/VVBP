@@ -291,6 +291,14 @@ export const gameEvalList: GameEvaluation[] = [
     key: "2095300",
   },
   {
+    gameName: "纪念碑谷",
+    gameNameEn: "MonumentValley",
+    gameCategory: ["益智", "解谜"],
+    gameTime: "10.4",
+    myScore: 95,
+    key: "1927720",
+  },
+  {
     gameName: "无尽星火",
     gameNameEn: "EndlessSpark",
     gameCategory: ["肉鸽"],
@@ -374,6 +382,7 @@ export const gameEvalList: GameEvaluation[] = [
     gameName: "荒岛求生: 逃出美女岛",
     gameNameEn: "SurvBeautyIsland",
     gameCategory: ["互动影视"],
+    gameTime: "7.5",
     myScore: 70,
     key: "3531160",
   },

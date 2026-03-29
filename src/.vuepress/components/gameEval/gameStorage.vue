@@ -1,7 +1,11 @@
 <template>
   <div class="gameEvalplanB">
+    <!-- 搜索组件 -->
+    <a-input-search placeholder="搜索游戏..." style="margin-bottom: 16px;" allowClear @search="handleSearch" />
+
+    <!-- 游戏卡片栅格 -->
     <a-row :gutter="[16, 16]">
-      <a-col :span="6" v-for="(item, index) in gameEvalList">
+      <a-col :span="6" v-for="(item, index) in filteredList">
         <a-card hoverable style="width: 180px">
           <!-- 封面 -->
           <template #cover>
@@ -48,10 +52,14 @@
 <script setup lang='ts'>
 import { gameEvalList, categoryColors } from './data.ts'
 import { HeartFilled, SmallDashOutlined, RightOutlined, EyeFilled, EyeTwoTone } from '@antdv-next/icons'
+import { ref } from 'vue'
 
 defineOptions({
-  name: 'gameEvalplanB'
+  name: 'gameEvalCard'
 })
+
+// 响应式存储过滤后的游戏列表
+const filteredList = ref([...gameEvalList])
 
 // 获取分类对应的颜色
 const getCategoryColor = (category: string) => {
@@ -66,6 +74,20 @@ const combinePicName = (name: string) => {
 // 点击查看详情，跳转到页面
 const handleClick = (item: any) => {
   window.open(`/VVBP/strategy/games/${item.gameNameEn}`, '_parent')
+}
+
+
+// 搜索功能
+const handleSearch = (value: string) => {
+  if (!value.trim()) {
+    // 如果搜索框为空，恢复显示所有游戏
+    filteredList.value = [...gameEvalList]
+  } else {
+    // 根据搜索条件过滤游戏列表
+    filteredList.value = gameEvalList.filter(item =>
+      item.gameName.toLowerCase().includes(value.toLowerCase())
+    )
+  }
 }
 
 </script>

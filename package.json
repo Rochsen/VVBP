@@ -30,10 +30,10 @@
     }
   },
   "dependencies": {
-    "@antdv-next/icons": "^1.0.4",
+    "@antdv-next/icons": "^1.0.5",
     "@tailwindcss/vite": "^4.1.18",
     "@vuepress/client": "2.0.0-rc.2",
-    "antdv-next": "^1.1.4",
+    "antdv-next": "^1.1.7",
     "element-plus": "^2.13.1",
     "tailwindcss": "^4.1.18",
     "tdesign-vue-next": "^1.18.0"
