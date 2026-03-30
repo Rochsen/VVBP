@@ -13,7 +13,7 @@ export default navbar([
   "/friendlinks/",
   // 笔记
   "/learn/",
-  // 攻略
+  // 爱好
   "/strategy/",
 
   // {
