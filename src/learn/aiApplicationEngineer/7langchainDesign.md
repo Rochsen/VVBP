@@ -1,6 +1,6 @@
 ---
 title: AI框架设计与选型
-date: 2026-03-21
+date: 2026-03-22
 categories: [教程, 知乎]
 tags: [AI, Langchain]
 ---
