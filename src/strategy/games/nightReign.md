@@ -13,7 +13,7 @@ date: 2026-04-15
 
 ## 恶魔商人让XX变得更强
 
-<img src="/game/nightReign/dealWithEvilSaler.jpeg" loading="lazy" />
+<img src="/game/nightReign/dealWithEvilSaler.png" loading="lazy" />
 
 ## Boss基本数据
 
