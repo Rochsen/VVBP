@@ -34,7 +34,7 @@ jobs:
       - name: 安装依赖
         run: |
           corepack enable
-          pnpm install --no-frozen-lockfile --allow-scripts=allow
+          pnpm install --no-frozen-lockfile --ignore-scripts=false
 
       - name: 构建文档
         env:
