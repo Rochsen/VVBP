@@ -1,10 +1,10 @@
 packages:
   - '.'
 
-onlyBuiltDependencies:
-  - esbuild
-  - highlight.js
-  - vue-demi
+allowBuilds:
+  esbuild: true
+  highlight.js: true
+  vue-demi: true
 
 patchedDependencies:
   "@v-c/picker@1.0.4": patches/@v-c__picker@1.0.4.patch
