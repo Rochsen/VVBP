@@ -21,14 +21,6 @@
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-hope": "2.0.0-rc.102"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ],
-    "patchedDependencies": {
-      "@v-c/picker@1.0.4": "patches/@v-c__picker@1.0.4.patch"
-    }
-  },
   "dependencies": {
     "@antdv-next/icons": "^1.0.5",
     "@tailwindcss/vite": "^4.1.18",
