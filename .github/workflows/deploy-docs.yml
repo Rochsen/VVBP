@@ -35,6 +35,17 @@ jobs:
       - name: 安装依赖
         run: |
           corepack enable
+          pnpm install --no-frozen-lockfile || true
+
+      - name: Approve pnpm build scripts
+        # Approve blocked dependency build scripts so pnpm will run them on the next install.
+        # pnpm v10 supports non-interactive approval; if your pnpm doesn't, run approve-builds locally and commit approvals.
+        run: |
+          pnpm -v
+          pnpm approve-builds --yes || true
+
+      - name: Reinstall dependencies (after approvals)
+        run: |
           pnpm install --no-frozen-lockfile
 
       - name: 构建文档
