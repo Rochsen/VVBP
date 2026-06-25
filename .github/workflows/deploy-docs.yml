@@ -32,8 +32,6 @@ jobs:
           cache: pnpm
 
       - name: 安装依赖
-        env:
-          PNPM_ONLY_BUILT_DEPENDENCIES: '["esbuild","highlight.js","vue-demi"]'
         run: |
           corepack enable
           pnpm install --no-frozen-lockfile
