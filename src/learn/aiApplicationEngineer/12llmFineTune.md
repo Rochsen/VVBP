@@ -34,15 +34,17 @@ graph TB
 ```mermaid
 graph LR
     subgraph 基座模型公司
-        A1[OpenAI/Google/阿里/DeepSeek] --> A2[规模大<br/>100B+参数]
-        A2 --> A3[数据通用<br/>万亿token]
-        A3 --> A4[成本高<br/>千卡月级]
+        direction LR
+        A1[OpenAI/Google/阿里/DeepSeek] --> A2[规模大<br>100B+参数]
+        A2 --> A3[数据通用<br>万亿token]
+        A3 --> A4[成本高<br>千卡月级]
     end
 
     subgraph 应用开发者
-        B1[企业/创业公司/个人] --> B2[规模适中<br/>6B-70B]
-        B2 --> B3[垂直领域<br/>医疗/法律/客服]
-        B3 --> B4[成本低<br/>数小时~数天]
+        direction LR
+        B1[企业/创业公司/个人] --> B2[规模适中<br>6B-70B]
+        B2 --> B3[垂直领域<br>医疗/法律/客服]
+        B3 --> B4[成本低<br>数小时~数天]
     end
 ```
 
@@ -143,11 +145,13 @@ $$h = Wx + BAx$$
 ```mermaid
 graph LR
     subgraph 高秩矩阵
+        direction LR
         A1[1000×1000矩阵] --> A2[五花八门的数据]
         A2 --> A3[无法简化<br/>必须保存全部]
     end
 
     subgraph 低秩矩阵
+        direction LR
         B1[1000×1000矩阵] --> B2[数据高度相关]
         B2 --> B3[只用几行基础数据]
         B3 --> B4[就能重建全部]
@@ -360,12 +364,14 @@ graph TB
 ```mermaid
 graph LR
     subgraph 全部奇异值
+        direction LR
         A1[λ₁=6.85] --> A2[λ₂=0.15]
         A2 --> A3[λ₃=0]
         A3 --> A4[λ₄=0]
     end
 
     subgraph 保留前k个
+        direction LR
         B1[λ₁=6.85] --> B2[λ₂=0.15]
         B2 --> B3[0]
         B3 --> B4[0]
